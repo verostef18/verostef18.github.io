@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+
 </head>
 
 <body>
@@ -28,46 +31,56 @@
         </ul>
     </nav>
     <main>
+        
         <section id="noticias">
-            <article id="noticia_1">
+            <!---->
+            <article class="noticia_1">
+              
                 <header>
-                    <button class="button-noticia">Noticia 1</button>
+                  
                 </header>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam eius alias consectetur, eligendi, ex
+                <!--
+                <p class="parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam eius alias consectetur, eligendi, ex
                     eum autem nostrum quae vero sunt repellendus placeat. Explicabo exercitationem ipsa, blanditiis quam
                     dignissimos veritatis modi.</p>
             </article>
-            <article id="noticia_2">
+            <article class="noticia_2">
                 <header>
                     <button class="button-noticia">Noticia 2</button>
                 </header>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio odio temporibus placeat blanditiis
+                <p class="parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio odio temporibus placeat blanditiis
                     consequatur cumque nostrum ipsum, eius adipisci ut laboriosam totam molestias similique dolorem
-                    accusantium perspiciatis dignissimos ipsam exercitationem.</p>
+                    accusantium perspiciatis dignissimos ipsam exercitationem.</p>-->
             </article>
         </section>
-        <section id="comentario">
-            <article id="comentario_1">
+       
+        <section id="comentarios-container">
+            <article class="comentarios">
                 <img src="./img/avatar.png" width="150" alt="">
                 <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Et natus excepturi nesciunt. Voluptatibus
                     eius mollitia dolorum voluptates aspernatur. Consectetur, odit! Eveniet, deleniti nulla distinctio
                     soluta eius odio deserunt unde quidem."</p>
             </article>
-            <article id="comentario_2">
+            <article class="comentarios">
                 <img src="./img/avatar.png" width="150" alt="">
                 <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Et natus excepturi nesciunt. Voluptatibus
                     eius mollitia dolorum voluptates aspernatur. Consectetur, odit! Eveniet, deleniti nulla distinctio
                     soluta eius odio deserunt unde quidem."</p>
 
             </article>
-            <article id="comentario_3">
+            <article class="comentarios">
                 <img src="./img/avatar.png" width="150" alt="">
                 <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Et natus excepturi nesciunt. Voluptatibus
                     eius mollitia dolorum voluptates aspernatur. Consectetur, odit! Eveniet, deleniti nulla distinctio
                     soluta eius odio deserunt unde quidem."</p>
 
             </article>
+         
+        
+
+            </article>
         </section>
+        <!--
         <section id="tu_comentario">
             <form action="" class="form">
                 <label>Nombre</label>
@@ -78,12 +91,22 @@
                 <textarea name="" id="" cols="30" rows="10"></textarea>
                 <button class="button">Enviar</button>
             </form>
+-->
+
+
+<h2>Agregar Comentario</h2>
+  <form id="form">
+    <input type="text" id="nombre" placeholder="Nombre" required>
+    <textarea id="comentario" placeholder="Escribe tu comentario" required></textarea>
+    <button id="submit" type="submit">Enviar comentario</button>
+  </form>
 
         </section>
     </main>
     <footer>
         CopyRights 2023 -Digitallers
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
