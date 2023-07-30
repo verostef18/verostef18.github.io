@@ -34,13 +34,13 @@ const noticias = [
     }
 
 })
-
+//Con ayuda de Chat gpt3
 const comentariosContainer = document.getElementById("comentarios-container");
 const comentarioForm = document.getElementById("form");
 const nombreInput = document.getElementById("nombre");
 const comentarioInput = document.getElementById("comentario");
 
-// Array para almacenar los comentarios
+
 const comentarios = [];
 
 function mostrarComentario(nombre, comentario) {
