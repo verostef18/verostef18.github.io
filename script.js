@@ -2,35 +2,46 @@ const noticias = [
     {
         titulo: "Noticia 1",
         contenido: "Estamos de actualización,generando noticias con JS",
+        imagen: "4.jpg",
 
     },
     {
         titulo: "Noticia 2",
         contenido: "Estamos de actualización,generando noticias con JS",
+        imagen: "5.png",
 
     },
     {
         titulo: "Noticia 3",
         contenido: "Estamos de actualización,generando noticias con JS",
+        imagen: "6.jpg",
 
     }
 ];
 
 
        window.addEventListener("load",()=>{
-        const dataList =document.getElementById("listaTareas");
+       
     const noticia = document.getElementById("noticias");
+    
     for(listaNot of noticias){
         let button=document.createElement("button");
         button.innerText=listaNot.titulo;
         button.className="button-noticia"
         noticia.appendChild(button);
+
         let p=document.createElement("p");
         p.innerText=listaNot.contenido;
         p.className="parrafo";
+
         
         
         noticia.appendChild(p);
+
+        let image = document.createElement("img");
+        image.src = listaNot.imagen;
+        image.className = "img-noticia";
+        noticia.appendChild(image);
     }
 
 })
